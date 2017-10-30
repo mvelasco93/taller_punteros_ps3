@@ -13,3 +13,10 @@ int main(void)
         printf("Tamanio de puntero  : %d bits\n", sizeof(puntero)*8);
         return 0;
 }
+
+void sawp(int *px, int *py){
+	int temp;
+	temp = *px;
+	*px = *py;
+	*py = temp;
+}
